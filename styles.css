@@ -13,6 +13,8 @@ body{
 p{
     color: #727272;
     font-size: 1rem;
+    text-align: l;
+    max-width: 427px;
 }
 
 
@@ -134,11 +136,81 @@ h2.feature-tit {
 }
 
 
+/* enjoy section */
+
+
+#enjoy{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+.enjoy-image img{
+    width: 100%;
+}
+.enjoy-box-container{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.enjoy-box{
+    box-shadow: 2px 2px 8px #80808087;
+    padding: 20px 23px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.enjoy-image {
+    max-width: 48%;
+    position: relative;
+}
+
+h1.enjoy-title {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    border-left: 5px solid orange;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+h1.enjoy-title {}
+
+h3.enjoy-box-title {
+    margin-bottom: 15px;
+}
+
+.enjoy-text {
+    margin-bottom: 20px;
+    /* max-width: 500px; */
+}
+span.years {
+    font-size: 2rem;
+    font-weight: bolder;
+    /* padding: 13px 10px; */
+}
+
+button.experience{
+    padding: 25px;
+    /* margin-left: -90px; */
+    position: absolute;
+    left: -76px;
+    bottom: -27px;
+    /* margin-bottom: 100px; */
+}
+
+
+
+
 /* small device */
 
 @media screen and (max-width:576px) {
 
-    nav, .nav-ul, #features{
+    nav, .nav-ul, #features, #enjoy{
         flex-direction: column;
     }
     .nav-ul{
@@ -159,7 +231,19 @@ h2.feature-tit {
     align-items: center;
     text-align: center;
  }
-  
+
+.enjoy-box-container{
+    max-width: 80%;
+    margin:0 auto;
+}
+.enjoy-image{
+    max-width: 80%;
+    margin: 0 auto;
+}
+button.experience{
+    left: -50px;
+}
+
 }
 
 /* medium device */
@@ -171,10 +255,14 @@ h2.feature-tit {
         
     }
 
-    #features{
+    #features, #enjoy{
         flex-direction: column;
     }
     .feature-image-container{
         margin-bottom: 30px;
+        max-width: 60%;
+    }
+    .enjoy-box-container{
+        max-width: 60%;
     }
 }
