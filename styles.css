@@ -205,6 +205,45 @@ button.experience{
 
 
 
+/* sponsor-section */
+
+
+#sponsors{
+    width: 1140px;
+    margin:100px auto;
+
+}
+.sponsor-container{
+    max-width: 420px;
+    margin: 0px auto;
+    text-align: center;
+}   
+
+  .sponsor-images{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 15px;
+        gap: 50px;
+        align-items: center;
+        filter: grayscale(100%);
+    }
+    .sponsor-images img{
+        max-width: 170px;
+    }
+
+p.sponsor-desc {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+h1.sponsor-title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+
+
 
 /* small device */
 
@@ -266,3 +305,4 @@ button.experience{
         max-width: 60%;
     }
 }
+
