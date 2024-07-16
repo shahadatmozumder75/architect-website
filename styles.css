@@ -219,7 +219,7 @@ button.experience{
     text-align: center;
 }   
 
-  .sponsor-images{
+    .sponsor-images{
         display: flex;
         justify-content: space-between;
         margin: 30px 15px;
@@ -228,7 +228,7 @@ button.experience{
         filter: grayscale(100%);
     }
     .sponsor-images img{
-        max-width: 170px;
+        max-width: 150px;
     }
 
 p.sponsor-desc {
@@ -243,13 +243,18 @@ h1.sponsor-title {
 }
 
 
+footer{
+    background-color: rgba(255, 144, 14, 0.1);
+     max-width: 1140px;
+     margin: 0 auto;
+}
 
 
 /* small device */
 
 @media screen and (max-width:576px) {
 
-    nav, .nav-ul, #features, #enjoy{
+    nav, .nav-ul, #features, #enjoy, .sponsor-images{
         flex-direction: column;
     }
     .nav-ul{
@@ -272,22 +277,28 @@ h1.sponsor-title {
  }
 
 .enjoy-box-container{
-    max-width: 80%;
+    max-width: 60%;
     margin:0 auto;
 }
 .enjoy-image{
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
 }
 button.experience{
     left: -50px;
 }
-
+#sponsors{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+ 
 }
 
 /* medium device */
 
 @media screen and (min-width:576px) and (max-width:992px) {
+
     nav{
        
         margin: 0 20px;
@@ -304,5 +315,18 @@ button.experience{
     .enjoy-box-container{
         max-width: 60%;
     }
+    #sponsors{
+       width: 60%;
+       margin: 0 auto;
+       margin-top: 100px;
+    }
+    .sponsor-images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+      
+
+    }
+   
 }
 
